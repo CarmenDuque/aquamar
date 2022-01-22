@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AquaMar - Home</title>
     <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/home.css" />
   </head>
   <body>
     <header>
@@ -24,7 +25,69 @@
         <li><a href="pages/contactanos.html">Contáctanos</a></li>
       </ul>
     </header>
-    <section id="content"></section>
+    <section id="content">
+      <section id="carousel">
+        <ion-icon name="arrow-back-outline" class="carousel__arrows"></ion-icon>
+        <img src="images/carousel/1.jpeg" class="carousel__imagen" />
+        <ion-icon
+          name="arrow-forward-outline"
+          class="carousel__arrows"
+        ></ion-icon>
+      </section>
+      <section id="productos">
+        <h2>Nuestros Productos</h2>
+        <div class="productos__links">
+          <a href="pages/corpinos.html" class="productos__links__link">
+            <img src="images/corpinos/1.jpg" />
+            <span>Corpiños</span>
+          </a>
+          <a href="pages/enteros.html" class="productos__links__link">
+            <img src="images/enteros/Enteros.jpg" />
+            <span>Enteros</span>
+          </a>
+          <a href="pages/bikinis.html" class="productos__links__link">
+            <img src="images/bikinis/2.jpg" />
+            <span>Bikinis</span>
+          </a>
+          <div class="mobile-only productos__links__direction forwards">
+            <ion-icon name="chevron-forward-outline"></ion-icon>
+          </div>
+          <div class="mobile-only productos__links__direction backwards">
+            <ion-icon name="chevron-back-outline"></ion-icon>
+          </div>
+        </div>
+      </section>
+
+      <section id="medidas">
+        <table class="medidas__table">
+          <tr>
+            <th>Talle</th>
+            <th>Busto (cm)</th>
+            <th>Cadera (cm)</th>
+          </tr>
+          <tr>
+            <td>S</td>
+            <td>75 a 82</td>
+            <td>85 a 92</td>
+          </tr>
+          <tr>
+            <td>M</td>
+            <td>83 a 86</td>
+            <td>93 a 96</td>
+          </tr>
+          <tr>
+            <td>L</td>
+            <td>87 a 92</td>
+            <td>97 a 100</td>
+          </tr>
+          <tr>
+            <td>XL</td>
+            <td>93 a 100</td>
+            <td>101 a 105</td>
+          </tr>
+        </table>
+      </section>
+    </section>
     <footer>
       <div class="footer__contacto-social">
         <ion-icon

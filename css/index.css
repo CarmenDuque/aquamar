@@ -37,6 +37,10 @@
     --font-small: 14px;
     --font-smallest: 12px;
   }
+
+  .mobile-only {
+    display: none !important;
+  }
 }
 
 @font-face {
@@ -53,7 +57,7 @@ body {
   background-image: url(../images/fondo.jpg);
   display: grid;
   font-family: LuxuriousRoman, Arial, sans-serif;
-  grid-template-columns: 100vw;
+  grid-template-columns: 100%;
   grid-template-rows: var(--header-height) auto var(--footer-height);
   margin: 0;
   min-height: 100vh;
