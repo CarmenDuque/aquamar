@@ -63,9 +63,10 @@ header {
   background-color: var(--color-main);
   display: flex;
   align-items: center;
+  justify-content: space-between;
   color: white;
   gap: var(--m);
-  padding: var(--s) var(--m);
+  padding: var(--s);
 }
 
 .header__home {
@@ -87,7 +88,6 @@ header {
 }
 
 .header__menu {
-  margin-left: auto;
   display: flex;
   gap: var(--s);
   font-size: var(--font-small);
@@ -108,4 +108,23 @@ header {
 
 footer {
   background-color: var(--color-secondary);
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: var(--m);
+  color: black;
+}
+
+.footer__contacto-social {
+  display: flex;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  font-size: var(--font-smallest);
+  gap: var(--xxs);
+  max-height: var(--m);
+}
+
+.footer__contacto-social__icono {
+  object-fit: cover;
+  font-size: var(--font-medium);
 }
