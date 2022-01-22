@@ -6,15 +6,47 @@
   --l: 24px;
 
   --header-height: 60px;
+  --header-logo-height: 42px;
+
   --footer-height: 40px;
 
   --color-main: #7f5a83;
   --color-secondary: #d8b4a0;
+
+  --font-title: 18px;
+  --font-medium: 14px;
+  --font-small: 12px;
+  --font-smallest: 10px;
+}
+
+@media (max-width: 600px) {
+  .desktop-only {
+    display: none !important;
+  }
+}
+
+@media (min-width: 600px) {
+  :root {
+    --header-height: 80px;
+    --header-logo-height: 48px;
+
+    --footer-height: 60px;
+
+    --font-title: 20px;
+    --font-medium: 16px;
+    --font-small: 14px;
+    --font-smallest: 12px;
+  }
 }
 
 @font-face {
   font-family: LuxuriousRoman;
   src: url(../fonts/LuxuriousRoman-Regular.ttf);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 body {
@@ -29,6 +61,45 @@ body {
 
 header {
   background-color: var(--color-main);
+  display: flex;
+  align-items: center;
+  color: white;
+  gap: var(--m);
+  padding: var(--s) var(--m);
+}
+
+.header__home {
+  display: flex;
+  align-items: center;
+  gap: var(--xs);
+}
+
+.header__home__logo {
+  max-width: var(--header-logo-height);
+  max-height: var(--header-logo-height);
+  object-fit: cover;
+  border-radius: 100%;
+}
+
+.header__home__titulo {
+  font-size: var(--font-title);
+  width: max-content;
+}
+
+.header__menu {
+  margin-left: auto;
+  display: flex;
+  gap: var(--s);
+  font-size: var(--font-small);
+  padding-inline: 0;
+}
+
+.header__menu li {
+  display: block;
+}
+
+.header__menu__selected-page {
+  color: var(--color-secondary);
 }
 
 #content {
