@@ -1,0 +1,40 @@
+:root {
+  --xxs: 4px;
+  --xs: 8px;
+  --s: 12px;
+  --m: 16px;
+  --l: 24px;
+
+  --header-height: 60px;
+  --footer-height: 40px;
+
+  --color-main: #7f5a83;
+  --color-secondary: #d8b4a0;
+}
+
+@font-face {
+  font-family: LuxuriousRoman;
+  src: url(../fonts/LuxuriousRoman-Regular.ttf);
+}
+
+body {
+  background-image: url(../images/fondo.jpg);
+  display: grid;
+  font-family: LuxuriousRoman, Arial, sans-serif;
+  grid-template-columns: 100vw;
+  grid-template-rows: var(--header-height) auto var(--footer-height);
+  margin: 0;
+  min-height: 100vh;
+}
+
+header {
+  background-color: var(--color-main);
+}
+
+#content {
+  padding: var(--s);
+}
+
+footer {
+  background-color: var(--color-secondary);
+}
