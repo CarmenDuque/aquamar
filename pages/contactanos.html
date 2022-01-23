@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aqua Mar - Contáctanos</title>
+    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="stylesheet" href="../css/contactanos.css" />
+    <link
+      rel="stylesheet"
+      href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"
+    />
+  </head>
+
+  <body>
+    <header>
+      <a href="../index.html" class="header__home">
+        <img src="../images/logo.png" class="header__home__logo" />
+        <h1 class="header__home__titulo">Aqua Mar</h1>
+      </a>
+      <ul class="header__menu">
+        <li>
+          <a href="../index.html">Home</a>
+        </li>
+        <li class="desktop-only"><a href="corpinos.html">Corpiños</a></li>
+        <li class="desktop-only"><a href="enteros.html">Enteros</a></li>
+        <li class="desktop-only"><a href="bikinis.html">Bikinis</a></li>
+        <li>
+          <a href="nosotros.html">Nosotros</a>
+        </li>
+        <li>
+          <a href="contactanos.html" class="header__menu__selected-page"
+            >Contáctanos</a
+          >
+        </li>
+      </ul>
+    </header>
+
+    <section id="content">
+      <h2 class="titulo-pagina">Contáctanos</h2>
+      <div class="contenedor-formulario">
+        <form class="contenedor-formulario__form">
+          <div class="contenedor-formulario__form__campo-horizontal">
+            <div class="contenedor-formulario__form__campo-horizontal__sexo">
+              <div>Hombre</div>
+              <input type="radio" name="sexo" value="hombre" />
+            </div>
+            <div class="contenedor-formulario__form__campo-horizontal__sexo">
+              <div>Mujer</div>
+              <input type="radio" name="sexo" value="mujer" />
+            </div>
+          </div>
+
+          <div class="contenedor-formulario__form__campo-formulario">
+            <label for="Nombre">Nombre</label>
+            <input type="text" name="Nombre" />
+          </div>
+
+          <div class="contenedor-formulario__form__campo-formulario">
+            <label for="talles">Talles</label>
+            <select name="talles">
+              <option value="L">Large</option>
+              <option value="M">Medium</option>
+              <option value="S">Small</option>
+            </select>
+          </div>
+
+          <div class="contenedor-formulario__form__campo-formulario">
+            <label for="email">Email</label>
+            <input type="text" name="email" />
+          </div>
+
+          <div class="contenedor-formulario__form__campo-formulario">
+            <label for="telefono">Telefono</label>
+            <input type="text" name="telefono" />
+          </div>
+
+          <div class="contenedor-formulario__form__campo-formulario">
+            <label for="mensaje">Mensaje</label>
+            <textarea name="mensaje" rows="5"></textarea>
+          </div>
+
+          <div class="contenedor-formulario__form__campo-formulario horizontal">
+            <label for="acepta">Acepta términos y condiciones</label>
+            <input type="checkbox" name="acepta" value="1" />
+          </div>
+
+          <div class="contenedor-formulario__form__reset">
+            <input type="reset" value="Limpiar" />
+            <input type="submit" value="Enviar" />
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer__contacto-social">
+        <ion-icon
+          name="logo-whatsapp"
+          class="footer__contacto-social__icono"
+        ></ion-icon>
+        <span>11-5667-334-33</span>
+      </div>
+      <div class="footer__contacto-social">
+        <ion-icon
+          name="logo-instagram"
+          class="footer__contacto-social__icono"
+        ></ion-icon>
+        <span>@aquamare</span>
+      </div>
+      <div class="footer__contacto-social">
+        <ion-icon
+          name="mail-outline"
+          class="footer__contacto-social__icono"
+        ></ion-icon>
+        <span>contacto@aquamare.com</span>
+      </div>
+    </footer>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

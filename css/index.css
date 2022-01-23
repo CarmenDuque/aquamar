@@ -4,6 +4,7 @@
   --s: 12px;
   --m: 16px;
   --l: 24px;
+  --xl: 32px;
 
   --header-height: 60px;
   --header-logo-height: 42px;
@@ -59,11 +60,16 @@ body {
   font-family: LuxuriousRoman, Arial, sans-serif;
   grid-template-columns: 100%;
   grid-template-rows: var(--header-height) auto var(--footer-height);
+  grid-template-areas:
+    "header"
+    "content"
+    "footer";
   margin: 0;
   min-height: 100vh;
 }
 
 header {
+  grid-area: header;
   background-color: var(--color-main);
   display: flex;
   align-items: center;
@@ -107,10 +113,12 @@ header {
 }
 
 #content {
+  grid-area: content;
   padding: var(--s);
 }
 
 footer {
+  grid-area: footer;
   background-color: var(--color-secondary);
   display: flex;
   align-items: center;

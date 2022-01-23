@@ -1,0 +1,49 @@
+.contenedor-formulario {
+  display: flex;
+  justify-content: center;
+}
+
+.contenedor-formulario__form {
+  max-width: 50vw;
+}
+
+.contenedor-formulario__form__campo-formulario {
+  font-size: 1.15rem;
+  margin: 16px 0;
+  display: flex;
+  flex-direction: column;
+  min-width: 300px;
+}
+
+.contenedor-formulario__form__campo-formulario input,
+.contenedor-formulario__form__campo-formulario textarea {
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid black;
+}
+
+.contenedor-formulario__form__campo-formulario label {
+  min-width: 100px;
+}
+
+.contenedor-formulario__form__campo-horizontal {
+  display: flex;
+  align-content: space-around;
+  gap: 25px;
+  justify-content: center;
+}
+
+.horizontal {
+  flex-direction: row;
+  gap: 16px;
+}
+
+.contenedor-formulario__form__campo-horizontal__sexo {
+  display: flex;
+  align-items: center;
+}
+
+.contenedor-formulario__form__reset {
+  display: flex;
+  justify-content: space-around;
+}
