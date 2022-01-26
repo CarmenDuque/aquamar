@@ -1,41 +1,42 @@
 .contenedor-formulario {
   display: flex;
   justify-content: center;
+  margin-left: var(--xs);
+  margin-right: var(--xs);
 }
 
 .contenedor-formulario__form {
-  max-width: 50vw;
+  width: 100%;
+  max-width: 450px;
 }
 
 .contenedor-formulario__form__campo-formulario {
-  font-size: 1.15rem;
-  margin: 16px 0;
+  font-size: var(--font-medium);
+  margin: var(--m) 0;
   display: flex;
   flex-direction: column;
-  min-width: 300px;
 }
 
 .contenedor-formulario__form__campo-formulario input,
 .contenedor-formulario__form__campo-formulario textarea {
-  padding: 8px;
-  border-radius: 8px;
+  padding: var(--xs);
+  border-radius: var(--xs);
   border: 1px solid black;
 }
 
 .contenedor-formulario__form__campo-formulario label {
-  min-width: 100px;
 }
 
 .contenedor-formulario__form__campo-horizontal {
   display: flex;
   align-content: space-around;
-  gap: 25px;
+  gap: var(--l);
   justify-content: center;
 }
 
 .horizontal {
   flex-direction: row;
-  gap: 16px;
+  gap: var(--m);
 }
 
 .contenedor-formulario__form__campo-horizontal__sexo {
