@@ -1,9 +1,11 @@
 #categorias {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: flex-start;
   gap: 16px;
   width: 100%;
+  overflow: scroll;
+  position: relative;
 }
 
 .categorias__categoria {
@@ -12,6 +14,32 @@
   align-items: center;
 }
 
+.categorias__direction {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: var(--color-main);
+  border-radius: 100%;
+  padding: var(--xs);
+  opacity: 0.6;
+}
+
+.categorias__direction.forwards {
+  right: 10px;
+}
+
+.categorias__direction.backwards {
+  left: 10px;
+}
+
+@media (min-width: 600px) {
+  #categorias {
+    overflow: hidden;
+    justify-content: space-evenly;
+  }
+}
 .categorias__categoria__imagen {
   object-fit: cover;
   max-width: 120px;
