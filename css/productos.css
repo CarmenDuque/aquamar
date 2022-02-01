@@ -7,11 +7,13 @@
   overflow: scroll;
   position: relative;
 }
-
 .categorias__categoria {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.categorias__categoria:hover {
+  color: var(--color-secondary);
 }
 
 .categorias__direction {
@@ -45,6 +47,9 @@
   max-width: 120px;
   max-height: 120px;
 }
+.categorias__categoria__imagen:hover {
+  transform: scale(1.05);
+}
 
 #modelos {
   display: flex;
@@ -60,11 +65,17 @@
   flex-direction: column;
   align-items: center;
 }
+.modelos__link:hover {
+  color: var(--color-secondary);
+}
 
 .modelos__foto {
   object-fit: cover;
   max-width: 240px;
   max-height: 240px;
+}
+.modelos__foto:hover {
+  transform: scale(1.05);
 }
 
 .bottom__numbers {

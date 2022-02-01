@@ -108,6 +108,9 @@ header {
 .header__menu li {
   display: block;
 }
+.header__menu li:hover {
+  color: var(--color-secondary);
+}
 
 .header__menu__selected-page {
   color: var(--color-secondary);
