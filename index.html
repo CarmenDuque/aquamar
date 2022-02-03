@@ -5,10 +5,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AquaMar - Home</title>
-    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/index-bootstrap.css" />
     <link rel="stylesheet" href="css/home.css" />
+    <!--
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <script
+      defer
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      defer
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css"
+    />
   </head>
   <body>
+    <!--
     <header>
       <a href="index.html" class="header__home">
         <img src="images/logo.png" class="header__home__logo" />
@@ -29,99 +67,199 @@
         </ul>
       </nav>
     </header>
-    <section id="content">
-      <section id="carousel">
-        <ion-icon name="arrow-back-outline" class="carousel__arrows"></ion-icon>
-        <img src="images/carousel/1.jpeg" class="carousel__imagen" />
-        <ion-icon
-          name="arrow-forward-outline"
-          class="carousel__arrows"
-        ></ion-icon>
-      </section>
-      <section id="productos">
-        <h2>Nuestros Productos</h2>
-        <div class="productos__links">
-          <a href="pages/corpinos.html" class="productos__links__link">
-            <img src="images/corpinos/1.jpg" />
-            <span>Corpiños</span>
+    -->
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+      <!-- Brand -->
+      <a class="navbar-brand" href="#">
+        <div class="row logo">
+          <img src="images/logo.png" class="rounded-circle" />
+          <h4>Aqua Mar</h4>
+        </div>
+      </a>
+
+      <!-- Links -->
+      <ul class="navbar-nav">
+        <!-- Dropdown -->
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            id="navbardrop"
+            data-toggle="dropdown"
+          >
+            <i class="bi bi-list"></i>
           </a>
-          <a href="pages/enteros.html" class="productos__links__link">
-            <img src="images/enteros/Enteros.jpg" />
-            <span>Enteros</span>
-          </a>
-          <a href="pages/bikinis.html" class="productos__links__link">
-            <img src="images/bikinis/2.jpg" />
-            <span>Bikinis</span>
-          </a>
-          <div class="mobile-only productos__links__direction forwards">
-            <ion-icon name="chevron-forward-outline"></ion-icon>
+          <div class="dropdown-menu absolute">
+            <a class="dropdown-item" href="index.html">Home</a>
+            <a class="dropdown-item" href="pages/corpinos.html">Corpiños</a>
+            <a class="dropdown-item" href="pages/enteros.html">Enteros</a>
+            <a class="dropdown-item" href="pages/bikinis.html">Bikinis</a>
+            <a class="dropdown-item" href="pages/contactanos.html"
+              >Contáctanos</a
+            >
+            <a class="dropdown-item" href="pages/nosotros.html">Nosotros</a>
           </div>
-          <div class="mobile-only productos__links__direction backwards">
-            <ion-icon name="chevron-back-outline"></ion-icon>
+        </li>
+      </ul>
+    </nav>
+
+    <section class="container-fluid">
+      <div id="carousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ul class="carousel-indicators">
+          <li data-target="#carousel" data-slide-to="0" class="active"></li>
+          <li data-target="#carousel" data-slide-to="1"></li>
+          <li data-target="#carousel" data-slide-to="2"></li>
+        </ul>
+
+        <!-- The slideshow -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="images/carousel/1.jpeg"
+              class="carousel-img"
+              alt="Foto 1"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="images/carousel/1.jpeg"
+              class="carousel-img"
+              alt="Foto 2"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="images/carousel/1.jpeg"
+              class="carousel-img"
+              alt="Foto 3"
+            />
           </div>
         </div>
-      </section>
 
-      <section id="medidas">
-        <table class="medidas__table">
-          <tr>
-            <th>Talle</th>
-            <th>Busto (cm)</th>
-            <th>Cadera (cm)</th>
-          </tr>
-          <tr>
-            <td>S</td>
-            <td>75 a 82</td>
-            <td>85 a 92</td>
-          </tr>
-          <tr>
-            <td>M</td>
-            <td>83 a 86</td>
-            <td>93 a 96</td>
-          </tr>
-          <tr>
-            <td>L</td>
-            <td>87 a 92</td>
-            <td>97 a 100</td>
-          </tr>
-          <tr>
-            <td>XL</td>
-            <td>93 a 100</td>
-            <td>101 a 105</td>
-          </tr>
-        </table>
-      </section>
+        <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#carousel" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#carousel" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
+      </div>
+    </section>
+
+    <!-- Nuestros Productos -->
+    <section id="productos" class="container">
+      <h5>Nuestros Productos</h5>
+      <div class="row">
+        <!--
+        <a href="pages/corpinos.html">
+          <img src="images/corpinos/1.jpg" />
+          <span>Corpiños</span>
+        </a>
+        <a href="pages/enteros.html">
+          <img src="images/enteros/Enteros.jpg" />
+          <span>Enteros</span>
+        </a>
+        <a href="pages/bikinis.html">
+          <img src="images/bikinis/2.jpg" />
+          <span>Bikinis</span>
+        </a>
+        -->
+        <div class="col-4">
+          <div class="card card-producto">
+            <img
+              class="card-img-top"
+              src="images/corpinos/1.jpg"
+              alt="Card image"
+              style="width: 100%"
+            />
+            <div class="card-body">
+              <h6 class="card-title">Corpiños</h6>
+              <a href="pages/corpinos.html" class="stretched-link"></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="card card-producto">
+            <img
+              class="card-img-top"
+              src="images/enteros/Enteros.jpg"
+              alt="Card image"
+              style="width: 100%"
+            />
+            <div class="card-body">
+              <h6 class="card-title">Enteros</h6>
+              <a href="pages/enteros.html" class="stretched-link"></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="card card-producto">
+            <img
+              class="card-img-top"
+              src="images/bikinis/2.jpg"
+              alt="Card image"
+              style="width: 100%"
+            />
+            <div class="card-body">
+              <h6 class="card-title">Bikinis</h6>
+              <a href="pages/bikinis.html" class="stretched-link"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="tallas" class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 col-sm-8 col-md-6">
+          <table class="table">
+            <tr>
+              <th>Talle</th>
+              <th>Busto (cm)</th>
+              <th>Cadera (cm)</th>
+            </tr>
+            <tr>
+              <td>S</td>
+              <td>75 a 82</td>
+              <td>85 a 92</td>
+            </tr>
+            <tr>
+              <td>M</td>
+              <td>83 a 86</td>
+              <td>93 a 96</td>
+            </tr>
+            <tr>
+              <td>L</td>
+              <td>87 a 92</td>
+              <td>97 a 100</td>
+            </tr>
+            <tr>
+              <td>XL</td>
+              <td>93 a 100</td>
+              <td>101 a 105</td>
+            </tr>
+          </table>
+        </div>
+      </div>
     </section>
     <footer>
-      <div class="footer__contacto-social">
-        <ion-icon
-          name="logo-whatsapp"
-          class="footer__contacto-social__icono"
-        ></ion-icon>
-        <span>11-5667-334-33</span>
-      </div>
-      <div class="footer__contacto-social">
-        <ion-icon
-          name="logo-instagram"
-          class="footer__contacto-social__icono"
-        ></ion-icon>
-        <span>@aquamare</span>
-      </div>
-      <div class="footer__contacto-social">
-        <ion-icon
-          name="mail-outline"
-          class="footer__contacto-social__icono"
-        ></ion-icon>
-        <span>contacto@aquamare.com</span>
+      <div class="bg-dark navbar-dark footer-container">
+        <ul class="row footer-links">
+          <li class="nav-item col-4 row justify-content-center">
+            <i class="bi bi-whatsapp"></i>
+            <span>11-5667-334-33</span>
+          </li>
+          <li class="nav-item col-4 row justify-content-center">
+            <i class="bi bi-instagram"></i>
+            <span>@aquamare</span>
+          </li>
+          <li class="nav-item col-4 row justify-content-center">
+            <i class="bi bi-envelope"></i>
+            <span>contacto@aquamare.com</span>
+          </li>
+        </ul>
       </div>
     </footer>
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-    ></script>
   </body>
 </html>

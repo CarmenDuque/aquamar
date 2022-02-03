@@ -1,0 +1,80 @@
+:root {
+  --xxs: 4px;
+  --xs: 8px;
+  --s: 12px;
+  --m: 16px;
+  --l: 24px;
+  --xl: 32px;
+  --xxl: 50px;
+
+  --header-height: 60px;
+  --header-logo-height: 42px;
+
+  --footer-height: 40px;
+
+  --color-main: #7f5a83;
+  --color-secondary: #d8b4a0;
+
+  --font-title: 18px;
+  --font-medium: 14px;
+  --font-small: 12px;
+  --font-smallest: 10px;
+}
+
+body {
+  background-image: url(../images/fondo.jpg);
+}
+
+.row.logo {
+  display: flex;
+  align-items: center;
+  gap: var(--xxs);
+  margin-left: var(--xxs);
+}
+
+.logo img {
+  max-width: var(--header-logo-height);
+  max-height: var(--header-logo-height);
+  object-fit: cover;
+}
+
+.navbar-nav .dropdown-menu.absolute {
+  position: absolute;
+  left: unset;
+  right: 0;
+}
+
+.carousel-img {
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.card-producto .card-body {
+  padding: 0.5rem;
+}
+
+.card-producto .card-body h6 {
+  text-align: center;
+}
+
+footer {
+  font-size: var(--font-small);
+  color: white;
+}
+
+footer .bg-dark.navbar-dark.footer-container {
+  padding: var(--m) var(--xs);
+}
+
+footer .row.footer-links {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 0;
+  padding: 0;
+}
+
+footer .row.footer-links li {
+  display: flex;
+  gap: var(--xxs);
+}
