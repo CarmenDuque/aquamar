@@ -126,7 +126,7 @@ header.header {
   padding: var(--s);
 }
 
-footer {
+footer.footer {
   grid-area: footer;
   background-color: var(--color-secondary);
   display: flex;
