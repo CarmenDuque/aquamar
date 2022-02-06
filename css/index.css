@@ -12,13 +12,18 @@
 
   --footer-height: 40px;
 
-  --color-main: #7f5a83;
-  --color-secondary: #d8b4a0;
+  --color-main: rgb(127, 90, 131);
+  --color-secondary: rgb(216, 180, 160);
+
+  --bg-color-main: rgba(127, 90, 131, 0.5);
+  --bg-color-secondary: rgba(216, 180, 160, 0.5);
 
   --font-title: 18px;
   --font-medium: 14px;
   --font-small: 12px;
   --font-smallest: 10px;
+
+  --shadow: var(--xxs) var(--xxs) var(--m) var(--xxs) rgba(0, 0, 0, 0.2);
 }
 
 @media (max-width: 600px) {
