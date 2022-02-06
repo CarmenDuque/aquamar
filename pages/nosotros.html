@@ -11,28 +11,64 @@
       rel="stylesheet"
       href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
   </head>
 
   <body>
-    <header>
+    <header class="header">
       <a href="../index.html" class="header__home">
         <img src="../images/logo.png" class="header__home__logo" />
         <h1 class="header__home__titulo">Aqua Mar</h1>
       </a>
-      <ul class="header__menu">
-        <li>
-          <a href="../index.html">Home</a>
-        </li>
-        <li class="desktop-only"><a href="corpinos.html">Corpiños</a></li>
-        <li class="desktop-only"><a href="enteros.html">Enteros</a></li>
-        <li class="desktop-only"><a href="bikinis.html">Bikinis</a></li>
-        <li>
-          <a href="nosotros.html" class="header__menu__selected-page"
-            >Nosotros</a
-          >
-        </li>
-        <li><a href="contactanos.html">Contáctanos</a></li>
-      </ul>
+
+      <nav>
+        <ul class="header__menu desktop-only">
+          <li>
+            <a href="../index.html">Home</a>
+          </li>
+          <li>
+            <a href="corpinos.html">Corpiños</a>
+          </li>
+          <li>
+            <a href="enteros.html">Enteros</a>
+          </li>
+          <li>
+            <a href="bikinis.html">Bikinis</a>
+          </li>
+          <li class="header__menu__selected-page">
+            <a href="nosotros.html">Nosotros</a>
+          </li>
+          <li>
+            <a href="contactanos.html">Contáctanos</a>
+          </li>
+        </ul>
+        <ul class="header__menu mobile-only">
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbardrop"
+              data-toggle="dropdown"
+            >
+              <ion-icon name="menu-outline"></ion-icon>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right">
+              <a class="dropdown-item" href="../index.html">Home</a>
+              <a class="dropdown-item" href="corpinos.html">Corpiños</a>
+              <a class="dropdown-item" href="enteros.html">Enteros</a>
+              <a class="dropdown-item" href="bikinis.html">Bikinis</a>
+              <a class="dropdown-item" href="#">Nosotros</a>
+              <a class="dropdown-item" href="contactanos.html">Contáctanos</a>
+            </div>
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <section id="content">

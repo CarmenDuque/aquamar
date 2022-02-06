@@ -50,15 +50,19 @@
   src: url(../fonts/LuxuriousRoman-Regular.ttf);
 }
 
-a {
-  text-decoration: none;
-  color: inherit;
+a,
+a:hover,
+a:focus,
+a:visited,
+a:active {
+  text-decoration: none !important;
+  color: inherit !important;
 }
 
 body {
   background-image: url(../images/fondo.jpg);
   display: grid;
-  font-family: LuxuriousRoman, Arial, sans-serif;
+  font-family: LuxuriousRoman, Arial, sans-serif !important;
   grid-template-columns: 100%;
   grid-template-rows: var(--header-height) auto var(--footer-height);
   grid-template-areas:
@@ -69,7 +73,7 @@ body {
   min-height: 100vh;
 }
 
-header {
+header.header {
   grid-area: header;
   background-color: var(--color-main);
   display: flex;
@@ -102,17 +106,18 @@ header {
   display: flex;
   gap: var(--s);
   font-size: var(--font-small);
-  padding-inline: 0;
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
 
-.header__menu li {
+.header__menu.desktop-only li {
   display: block;
-}
-.header__menu li:hover {
-  color: var(--color-secondary);
+  font-weight: 700;
 }
 
-.header__menu__selected-page {
+.header__menu__selected-page,
+.header__menu.desktop-only li:hover {
   color: var(--color-secondary);
 }
 
