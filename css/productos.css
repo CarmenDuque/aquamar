@@ -1,19 +1,48 @@
+.titulo-pagina {
+  font-weight: 700;
+  color: var(--color-main);
+}
+
 #categorias {
   display: flex;
   align-items: center;
   justify-content: flex-start;
   gap: 16px;
   width: 100%;
-  overflow: scroll;
-  position: relative;
+  padding: var(--l) 0;
+
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+  scroll-snap-type: inline mandatory;
 }
+
 .categorias__categoria {
+  background-color: var(--bg-color-secondary);
+  padding: var(--xs);
+  border-radius: var(--xs);
+  transition: all 300ms ease-in-out;
+
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: var(--xxs);
+
+  scroll-snap-align: start;
 }
 .categorias__categoria:hover {
-  color: var(--color-secondary);
+  transform: scale(1.05);
+  box-shadow: var(--shadow);
+}
+
+.categorias__categoria img {
+  object-fit: cover;
+  max-width: 200px;
+  max-height: 200px;
+  border-radius: var(--xs);
+}
+
+.categorias__categoria span {
+  font-weight: bold;
 }
 
 .categorias__direction {
@@ -42,14 +71,6 @@
     justify-content: space-evenly;
   }
 }
-.categorias__categoria__imagen {
-  object-fit: cover;
-  max-width: 120px;
-  max-height: 120px;
-}
-.categorias__categoria__imagen:hover {
-  transform: scale(1.05);
-}
 
 #modelos {
   display: flex;
@@ -59,25 +80,68 @@
   gap: 32px;
   margin-top: 64px;
 }
-
-.modelos__link {
+.modelos__card {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  background-color: var(--bg-color-main);
 }
-.modelos__link:hover {
-  color: var(--color-secondary);
+.modelos__card:hover {
+  transform: scale(1.05);
+  box-shadow: var(--shadow);
 }
-
-.modelos__foto {
+.modelos__card__foto img {
   object-fit: cover;
   max-width: 240px;
   max-height: 240px;
 }
-.modelos__foto:hover {
-  transform: scale(1.05);
+.modelos__card__texto {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: var(--m);
+}
+.modelos__card__texto__nombre {
+  font-weight: 700;
 }
 
+.modelos__card__texto__tipo {
+  font-size: var(--font-small);
+  color: white;
+}
+
+.carousel-item {
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.carousel-item-image {
+  height: 100%;
+  width: 100%;
+  object-position: top;
+  object-fit: cover;
+}
+.modelo__descripcion {
+  margin-top: var(--s);
+}
+.modelo__descripcion__texto {
+  text-align: justify;
+}
+.medidas {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: var(--l);
+  color: var(--color-main);
+}
+
+.medidas__table {
+  min-width: 300px;
+}
+
+.medidas__table td {
+  text-align: center;
+}
 .bottom__numbers {
   display: flex;
   align-items: center;
