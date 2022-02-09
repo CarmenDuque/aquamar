@@ -111,10 +111,14 @@
 
 .carousel-item {
   height: 300px;
-  display: flex;
   align-items: center;
   justify-content: center;
 }
+
+.carousel-item.active {
+  display: flex;
+}
+
 .carousel-item-image {
   height: 100%;
   width: 100%;
