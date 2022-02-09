@@ -9,7 +9,6 @@
 
 .carousel-item {
   height: 300px;
-  display: flex;
   align-items: center;
   justify-content: center;
 }
@@ -18,6 +17,10 @@
   .carousel-item {
     height: 450px;
   }
+}
+
+.carousel-item.active {
+  display: flex;
 }
 
 .carousel-item-image {
@@ -86,20 +89,4 @@
 
 .productos__links__card span {
   font-weight: bold;
-}
-
-#medidas {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  padding: var(--l);
-  color: var(--color-main);
-}
-
-.medidas__table {
-  min-width: 300px;
-}
-
-.medidas__table td {
-  text-align: center;
 }
