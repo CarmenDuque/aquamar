@@ -1,0 +1,168 @@
+@import "../base/variables";
+
+.titulo-pagina {
+  font-weight: 700;
+  color: $color-main;
+}
+
+.categorias {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 16px;
+  width: 100%;
+  padding: $l 0;
+
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+  scroll-snap-type: inline mandatory;
+
+  @media (min-width: 600px) {
+    overflow: hidden;
+    justify-content: space-evenly;
+  }
+
+  &__categoria {
+    background-color: $bg-color-secondary;
+    padding: $xs;
+    border-radius: $xs;
+    transition: all 300ms ease-in-out;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: $xxs;
+
+    scroll-snap-align: start;
+
+    &:hover {
+      transform: scale(1.05);
+      box-shadow: $shadow;
+    }
+
+    img {
+      object-fit: cover;
+      max-width: 200px;
+      max-height: 200px;
+      border-radius: $xs;
+    }
+
+    span {
+      font-weight: bold;
+    }
+  }
+  &__direction {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: $color-main;
+    border-radius: 100%;
+    padding: $xs;
+    opacity: 0.6;
+
+    .forwards {
+      right: 10px;
+    }
+
+    .backwards {
+      left: 10px;
+    }
+  }
+}
+
+.modelos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 32px;
+  margin-top: 64px;
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    background-color: $bg-color-main;
+
+    &:hover {
+      transform: scale(1.05);
+      box-shadow: $shadow;
+    }
+
+    &__foto {
+      img {
+        object-fit: cover;
+        max-width: 240px;
+        max-height: 240px;
+      }
+    }
+
+    &__texto {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: $m;
+
+      &__nombre {
+        font-weight: 700;
+      }
+
+      &__tipo {
+        font-size: $font-small;
+        color: white;
+      }
+    }
+
+    .carousel-item {
+      height: 300px;
+      align-items: center;
+      justify-content: center;
+
+      &.active {
+        display: flex;
+      }
+
+      &__image {
+        height: 100%;
+        width: 100%;
+        object-position: top;
+        object-fit: cover;
+      }
+    }
+  }
+}
+.modelo {
+  &__descripcion {
+    margin-top: $s;
+
+    &__texto {
+      text-align: justify;
+    }
+  }
+}
+
+.medidas {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: $l;
+  color: $color-main;
+
+  &__table {
+    min-width: 300px;
+    td {
+      text-align: center;
+    }
+  }
+}
+
+.bottom__numbers {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 32px;
+  font-weight: bold;
+  font-size: 1rem;
+}

@@ -1,0 +1,119 @@
+@import "../base/_variables.scss";
+
+@media (max-width: 600px) {
+  .desktop-only {
+    display: none !important;
+  }
+}
+
+@media (min-width: 600px) {
+  .mobile-only {
+    display: none !important;
+  }
+}
+
+@font-face {
+  font-family: LuxuriousRoman;
+  src: url(../fonts/LuxuriousRoman-Regular.ttf);
+}
+
+a,
+a:hover,
+a:focus,
+a:visited,
+a:active {
+  text-decoration: none !important;
+  color: inherit !important;
+}
+
+body {
+  background-image: url(../images/fondo.jpg);
+  display: grid;
+  font-family: LuxuriousRoman, Arial, sans-serif !important;
+  grid-template-columns: 100%;
+  grid-template-rows: $header-height auto $footer-height;
+  grid-template-areas:
+    "header"
+    "content"
+    "footer";
+  margin: 0;
+  min-height: 100vh;
+  overflow-inline: hidden;
+}
+
+.header {
+  grid-area: header;
+  background-color: $color-main;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  gap: $m;
+  padding: $s;
+
+  &__home {
+    display: flex;
+    align-items: center;
+    gap: $xs;
+
+    &__logo {
+      max-width: $header-logo-height;
+      max-height: $header-logo-height;
+      object-fit: cover;
+      border-radius: 100%;
+    }
+
+    &__titulo {
+      font-size: $font-title;
+      width: max-content;
+    }
+  }
+
+  &__menu {
+    display: flex;
+    gap: $s;
+    font-size: $font-small;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+
+    &.desktop-only li {
+      display: block;
+      font-weight: 700;
+    }
+
+    &__selected-page,
+    &.desktop-only li:hover {
+      color: $color-secondary;
+    }
+  }
+}
+
+#content {
+  grid-area: content;
+  padding: $s;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: $color-secondary;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: $m;
+  color: black;
+
+  &__contacto-social {
+    display: flex;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    font-size: $font-smallest;
+    gap: $xxs;
+    max-height: $m;
+
+    &__icono {
+      object-fit: cover;
+      font-size: $font-medium;
+    }
+  }
+}
