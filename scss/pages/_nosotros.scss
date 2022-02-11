@@ -1,0 +1,58 @@
+@import "../base/variables";
+
+.titulo-pagina {
+  text-align: center;
+}
+
+.nosotros {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: $m;
+  padding-left: $m;
+  padding-right: $m;
+
+  &__texto {
+    font-size: var(--font-medium);
+    text-align: justify;
+    flex-grow: 1;
+  }
+
+  &__imagen {
+    flex-grow: 1;
+
+    &__ppal {
+      display: flex;
+      justify-content: space-around;
+      max-width: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+.informacion {
+  display: flex;
+  flex-direction: column;
+  margin-top: $xl;
+  gap: $xl;
+  align-items: center;
+  flex-direction: row-reverse;
+
+  &__horarios {
+    font-size: $font-medium;
+    text-align: center;
+    flex-grow: 1;
+    width: 100%;
+  }
+
+  &__mapa {
+    width: 95%;
+    margin-bottom: $m;
+    flex-grow: 2;
+  }
+
+  @media (min-width: 600px) {
+    flex-direction: row;
+  }
+}

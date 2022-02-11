@@ -1,0 +1,51 @@
+@import "../base/variables";
+
+.horizontal {
+  flex-direction: row;
+  gap: var(--m);
+}
+
+.contenedor-formulario {
+  display: flex;
+  justify-content: center;
+  margin-left: var(--xs);
+  margin-right: var(--xs);
+
+  &__form {
+    width: 100%;
+    max-width: 450px;
+
+    &__campo-horizontal {
+      display: flex;
+      align-content: space-around;
+      gap: var(--l);
+      justify-content: center;
+
+      &__sexo {
+        display: flex;
+        align-items: center;
+      }
+    }
+
+    &__reset {
+      display: flex;
+      justify-content: space-around;
+    }
+
+    &__campo-formulario {
+      font-size: var(--font-medium);
+      margin: var(--m) 0;
+      display: flex;
+      flex-direction: column;
+
+      input,
+      textarea {
+        padding: var(--xs);
+        border-radius: var(--xs);
+        border: 1px solid black;
+      }
+      label {
+      }
+    }
+  }
+}
