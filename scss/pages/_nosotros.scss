@@ -29,6 +29,10 @@
       object-fit: cover;
     }
   }
+
+  @media (min-width: 600px) {
+    flex-direction: row;
+  }
 }
 
 .informacion {
@@ -37,7 +41,6 @@
   margin-top: $xl;
   gap: $xl;
   align-items: center;
-  flex-direction: row-reverse;
 
   &__horarios {
     font-size: $font-medium;
@@ -53,6 +56,6 @@
   }
 
   @media (min-width: 600px) {
-    flex-direction: row;
+    flex-direction: row-reverse;
   }
 }

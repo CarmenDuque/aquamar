@@ -291,14 +291,16 @@ body {
       justify-content: space-around;
       max-width: 100%;
       object-fit: cover; }
+  @media (min-width: 600px) {
+    .nosotros {
+      flex-direction: row; } }
 
 .informacion {
   display: flex;
   flex-direction: column;
   margin-top: 32px;
   gap: 32px;
-  align-items: center;
-  flex-direction: row-reverse; }
+  align-items: center; }
   .informacion__horarios {
     font-size: 14px;
     text-align: center;
@@ -310,24 +312,20 @@ body {
     flex-grow: 2; }
   @media (min-width: 600px) {
     .informacion {
-      flex-direction: row; } }
-
-.horizontal {
-  flex-direction: row;
-  gap: var(--m); }
+      flex-direction: row-reverse; } }
 
 .contenedor-formulario {
   display: flex;
   justify-content: center;
-  margin-left: var(--xs);
-  margin-right: var(--xs); }
+  margin-left: 24px;
+  margin-right: 8px; }
   .contenedor-formulario__form {
     width: 100%;
     max-width: 450px; }
     .contenedor-formulario__form__campo-horizontal {
       display: flex;
       align-content: space-around;
-      gap: var(--l);
+      gap: 24px;
       justify-content: center; }
       .contenedor-formulario__form__campo-horizontal__sexo {
         display: flex;
@@ -335,13 +333,25 @@ body {
     .contenedor-formulario__form__reset {
       display: flex;
       justify-content: space-around; }
+      .contenedor-formulario__form__reset .btn-primary.boton {
+        background-color: #7f5a83;
+        border-color: #7f5a83; }
+        .contenedor-formulario__form__reset .btn-primary.boton:hover, .contenedor-formulario__form__reset .btn-primary.boton:focus, .contenedor-formulario__form__reset .btn-primary.boton:active {
+          background-color: #7f5a83;
+          border-color: #7f5a83;
+          opacity: 0.8; }
+        .contenedor-formulario__form__reset .btn-primary.boton:focus {
+          box-shadow: 0 0 0 0.2rem rgba(127, 90, 131, 0.5); }
     .contenedor-formulario__form__campo-formulario {
-      font-size: var(--font-medium);
-      margin: var(--m) 0;
+      font-size: 14px;
+      margin: 16px 0;
       display: flex;
       flex-direction: column; }
+      .contenedor-formulario__form__campo-formulario.horizontal {
+        flex-direction: row;
+        gap: 16px; }
       .contenedor-formulario__form__campo-formulario input,
       .contenedor-formulario__form__campo-formulario textarea {
-        padding: var(--xs);
-        border-radius: var(--xs);
+        padding: 8px;
+        border-radius: 8px;
         border: 1px solid black; }

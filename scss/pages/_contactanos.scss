@@ -1,15 +1,10 @@
 @import "../base/variables";
 
-.horizontal {
-  flex-direction: row;
-  gap: var(--m);
-}
-
 .contenedor-formulario {
   display: flex;
   justify-content: center;
-  margin-left: var(--xs);
-  margin-right: var(--xs);
+  margin-left: $l;
+  margin-right: $xs;
 
   &__form {
     width: 100%;
@@ -18,7 +13,7 @@
     &__campo-horizontal {
       display: flex;
       align-content: space-around;
-      gap: var(--l);
+      gap: $l;
       justify-content: center;
 
       &__sexo {
@@ -30,18 +25,40 @@
     &__reset {
       display: flex;
       justify-content: space-around;
+
+      .btn-primary.boton {
+        background-color: $color-main;
+        border-color: $color-main;
+
+        &:hover,
+        &:focus,
+        &:active {
+          background-color: $color-main;
+          border-color: $color-main;
+          opacity: 0.8;
+        }
+
+        &:focus {
+          box-shadow: 0 0 0 0.2rem $bg-color-main;
+        }
+      }
     }
 
     &__campo-formulario {
-      font-size: var(--font-medium);
-      margin: var(--m) 0;
+      font-size: $font-medium;
+      margin: $m 0;
       display: flex;
       flex-direction: column;
 
+      &.horizontal {
+        flex-direction: row;
+        gap: $m;
+      }
+
       input,
       textarea {
-        padding: var(--xs);
-        border-radius: var(--xs);
+        padding: $xs;
+        border-radius: $xs;
         border: 1px solid black;
       }
       label {
