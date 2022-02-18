@@ -43,7 +43,7 @@ body {
 
 .header {
   grid-area: header;
-  background-color: $color-main;
+  background-color: map-get($color, main);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -64,7 +64,7 @@ body {
     }
 
     &__titulo {
-      font-size: $font-title;
+      font-size: map-get($font, title);
       width: max-content;
     }
   }
@@ -116,4 +116,9 @@ body {
       font-size: $font-medium;
     }
   }
+}
+
+.imagen-tarjeta {
+  object-fit: cover;
+  object-position: top;
 }
