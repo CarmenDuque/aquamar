@@ -1,4 +1,5 @@
 @import "../base/variables";
+@import "../base/mixins";
 
 .titulo-pagina {
   font-weight: 700;
@@ -23,6 +24,8 @@
   }
 
   &__categoria {
+    @include card-hover;
+
     background-color: $bg-color-secondary;
     padding: $xs;
     border-radius: $xs;
@@ -34,11 +37,6 @@
     gap: $xxs;
 
     scroll-snap-align: start;
-
-    &:hover {
-      transform: scale(1.05);
-      box-shadow: $shadow;
-    }
 
     img {
       object-fit: cover;
@@ -81,14 +79,11 @@
   margin-top: 64px;
 
   &__card {
+    @include card-hover;
+
     display: flex;
     flex-direction: column;
     background-color: $bg-color-main;
-
-    &:hover {
-      transform: scale(1.05);
-      box-shadow: $shadow;
-    }
 
     &__foto {
       img {

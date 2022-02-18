@@ -14,13 +14,30 @@ $footer-height: 40px;
 $color-main: rgb(127, 90, 131);
 $color-secondary: rgb(216, 180, 160);
 
+$color: (
+  main: rgb(127, 90, 131),
+  secondary: rgb(216, 180, 160),
+);
+
 $bg-color-main: rgba(127, 90, 131, 0.5);
 $bg-color-secondary: rgba(216, 180, 160, 0.5);
+
+$bg-color: (
+  main: rgba(127, 90, 131, 0.5),
+  secondary: rgba(216, 180, 160, 0.5),
+);
 
 $font-title: 18px;
 $font-medium: 14px;
 $font-small: 12px;
 $font-smallest: 10px;
+
+$font: (
+  title: 18px,
+  medium: 14px,
+  small: 12px,
+  smallest: 10px,
+);
 
 $shadow: $xxs $xxs $m $xxs rgba(0, 0, 0, 0.2);
 
@@ -34,4 +51,11 @@ $shadow: $xxs $xxs $m $xxs rgba(0, 0, 0, 0.2);
   $font-medium: 16px;
   $font-small: 14px;
   $font-smallest: 12px;
+
+  $font: (
+    title: 20px,
+    medium: 16px,
+    small: 14px,
+    smallest: 12px,
+  );
 }

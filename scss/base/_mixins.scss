@@ -1,0 +1,8 @@
+@use "./variables";
+
+@mixin card-hover {
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: $shadow;
+  }
+}
