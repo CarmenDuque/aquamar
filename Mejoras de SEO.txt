@@ -1,0 +1,26 @@
+-Agregué estas keywords en cada una de las paginas: 
+
+.index: aquamar, beachwear, mallas, playa, bañador, vacaciones, verano, sol, moda.
+.bikinis:aquamar, beachwear, mallas, bikini, hilos, bombachas, vedetinas, colaless, playa, bañador, vacaciones, verano, sol, moda
+.contactanos: aquamar, beachwear, mallas, playa, danos tu opinion, atencion clientes, vacaciones, verano, sol, moda
+.corpiños:aquamar, beachwear, corpiños, top, traje de baño, playa, bañador, vacaciones, verano, sol, moda
+.enteros:aquamar, beachwear, mallas enteras, traje de baño completo, playa, bañador, vacaciones, verano, sol, moda
+.nosotros:aquamar, beachwear, mallas, ubicacion, horarios de atención, como nacimos, playa, bañador, vacaciones, verano, sol, moda
+
+- Agregue la metaetiqueta "description" a cada pagina:
+.index: "Trajes de baño de diseño exclusivo para ventas online"
+.bikinis:"Bikinis de diseño exclusivo para ventas online"
+.contactanos: "Formulario de contacto para aclarar su orden ó darnos comentarios de nuestros productos"
+.corpiños:"Corpiños de diseño exclusivo para ventas online"
+.enteros:"Mallas Enteras de diseño exclusivo para ventas online"
+.nosotros:"Donde Ubicarnos, Horarios de Atención y como se creo nuestra empresa de trajes de baño"
+
+- Cambié estos títulos:
+.index: AquaMar - Home
+.bikinis: Aqua Mar - Bikinis
+.contactanos: Aqua Mar - Contáctanos
+.corpiños: Aqua Mar - Contáctanos
+.enteros: Aqua Mar - Enteros
+.nosotros: Aqua Mar - Nosotros 
+
+
