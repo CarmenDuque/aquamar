@@ -390,15 +390,15 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  gap: 16px;
+  gap: 32px;
   padding-left: 16px;
   padding-right: 16px; }
   .nosotros__texto {
     font-size: var(--font-medium);
     text-align: justify;
-    flex-grow: 1; }
+    flex-basis: 100%; }
   .nosotros__imagen {
-    flex-grow: 1; }
+    flex-basis: 100%; }
     .nosotros__imagen__ppal {
       display: flex;
       justify-content: space-around;
@@ -417,12 +417,12 @@ body {
   .informacion__horarios {
     font-size: 18px;
     text-align: center;
-    flex-grow: 1;
+    flex-basis: 100%;
     width: 100%; }
   .informacion__mapa {
     width: 95%;
     margin-bottom: 16px;
-    flex-grow: 2; }
+    flex-basis: 100%; }
   @media (min-width: 600px) {
     .informacion {
       flex-direction: row-reverse; } }
